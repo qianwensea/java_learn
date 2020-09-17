@@ -15,6 +15,9 @@
         <module>day01_eesy_04bean</module>
         <module>day01_eesy_05DI</module>
         <module>day02_eesy_01anno_ioc</module>
+        <module>day02_eesy_02accountXMLIOC</module>
+        <module>day02_eesy_03accountAnnoIOC</module>
+        <module>day02_eesy_04account_annoioc_withoutXML</module>
     </modules>
 
 

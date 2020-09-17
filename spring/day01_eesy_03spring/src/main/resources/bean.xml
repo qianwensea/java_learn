@@ -6,6 +6,6 @@
 
 <!--    把对象的创建来交给spring来管理-->
     <bean id="accountService" class="com.shi.service.impl.AccountServiceImpl"></bean>
-    <bean id="accountDao" class="com.shi.dao.impl.AccountDaoImpl"></bean>
+    <bean id="accountDao" class="com.shi.dao.impl.AccountDaoImpl1"></bean>
 
 </beans>
