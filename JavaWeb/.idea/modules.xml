@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/01-html_css/01-html_css.iml" filepath="$PROJECT_DIR$/01-html_css/01-html_css.iml" />
+      <module fileurl="file://$PROJECT_DIR$/02-javascript/02-javascript.iml" filepath="$PROJECT_DIR$/02-javascript/02-javascript.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03-JQuery/03-JQuery.iml" filepath="$PROJECT_DIR$/03-JQuery/03-JQuery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/04-JQuery/04-JQuery.iml" filepath="$PROJECT_DIR$/04-JQuery/04-JQuery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/05-XML/05-XML.iml" filepath="$PROJECT_DIR$/05-XML/05-XML.iml" />
+      <module fileurl="file://$PROJECT_DIR$/05-book_static/05-book_static.iml" filepath="$PROJECT_DIR$/05-book_static/05-book_static.iml" />
+      <module fileurl="file://$PROJECT_DIR$/05-web/05-web.iml" filepath="$PROJECT_DIR$/05-web/05-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/06-servlet/06-servlet.iml" filepath="$PROJECT_DIR$/06-servlet/06-servlet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/07-servlet/07-servlet.iml" filepath="$PROJECT_DIR$/07-servlet/07-servlet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/08-jsp/08-jsp.iml" filepath="$PROJECT_DIR$/08-jsp/08-jsp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/09-EL_JSTL/09-EL_JSTL.iml" filepath="$PROJECT_DIR$/09-EL_JSTL/09-EL_JSTL.iml" />
+      <module fileurl="file://$PROJECT_DIR$/13-cookie_session/13-cookie_session.iml" filepath="$PROJECT_DIR$/13-cookie_session/13-cookie_session.iml" />
+      <module fileurl="file://$PROJECT_DIR$/15-filter/15-filter.iml" filepath="$PROJECT_DIR$/15-filter/15-filter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/16-json-ajax-i18n/16-json-ajax-i18n.iml" filepath="$PROJECT_DIR$/16-json-ajax-i18n/16-json-ajax-i18n.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BookStore/BookStore.iml" filepath="$PROJECT_DIR$/BookStore/BookStore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaWeb.iml" filepath="$PROJECT_DIR$/JavaWeb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/login_test/login_test.iml" filepath="$PROJECT_DIR$/login_test/login_test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tmp/tmp.iml" filepath="$PROJECT_DIR$/tmp/tmp.iml" />
+    </modules>
+  </component>
+</project>

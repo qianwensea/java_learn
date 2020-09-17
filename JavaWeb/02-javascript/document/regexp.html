@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>正则表达式</title>
+    <script type="text/javascript">
+        //表示字符串中是否包含字母e
+        // var patt = new RegExp("e");
+        // var patt = /e/; //也是正则表达式对象
+
+        //表示字符串中是否包含字母a或b或c
+        // var patt = /[a,b,c]/
+        //表示字符串是否包含小写字母
+        // var patt = /[a-z]/;
+        //表示字符串是否包含大写字母
+        // var patt = /[A-Z]/;
+        //表示字符串中是否包含任意的数字
+        // var patt = /[0-9]/;
+
+        //  \w表示是否包含字母数字下划线
+        // var patt = /\w/;
+        //表示字符串中至少包含一个a
+        // var patt = /a+/;
+        //表示字符串中是否包含0个 或 多个a
+        // var patt = /a*/;
+        //表示字符串中是否包含0个 或 1个a
+        // var patt = /a?/;
+        //表示字符串中是否包含连续3个a
+        // var patt = /a{3}/;
+        //表示字符串中是否包含至少连续3个至多连续5个a
+        // var patt = /a{3,5}/;
+        //表示字符串中是否包含至少连续3个a
+        // var patt = /a{3,}/;
+        //表示字符串中是否以a结尾
+        // var patt = /a$/;
+        //表示字符串中是否以a开始
+        // var patt = /^a/;
+
+
+        //问题:var patt = /a{3,5}/;中,最大什么时候有用?
+        //表示字符串中是否包含至少连续3个至多连续5个a
+        // var patt = /a{3,5}/;
+        //要求字符串从头到尾都必须完全匹配
+        var patt = /^a{3,5}$/;
+        alert(patt);
+        var str = "aaaaaa";
+        alert(patt.test(str)); //此时就是false
+
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

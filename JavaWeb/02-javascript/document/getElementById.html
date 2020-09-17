@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        /*
+        需求: 当用户点击了验证按钮,要获取输入框里的内容,然后验证输入内容是否合法
+        验证的规则: 必须字母由,数字,下划线组成.并且长度的5-12位
+         */
+        //静态绑定
+        function onclickFunc() {
+            //1 当我们要操作一个标签时,要先获取这个标签的对象
+            var usernameObj = document.getElementById("username")
+            // alert(usernameObj);//[object HTMLInputElement]它就是DOM对象
+            // alert(usernameObj.value);
+            var usernameText = usernameObj.value;
+            //2 如何验证字符串符合某个规则,需要使用正则表达式
+            var patt = /^\w{5,12}$/;
+            /*
+            * test()方法用于测试某个字符串,是不是符合我的规则,
+            * 匹配就返回true,不匹配就返回false
+            * */
+            var usernameSpanObj = document.getElementById("userspan");
+            //innerHTML 表示起始标签和结束标签之间的内容
+            //innerHTML 这个属性可读可写
+            // alert(usernameSpanObj.innerHTML);
+            if (patt.test(usernameText)){
+                usernameSpanObj.innerHTML = "<img src=\"right.png\" width=\"20\" height=\"18\">";
+            }else{
+                usernameSpanObj.innerHTML = "<img src=\"wrong.png\" width=\"20\" height=\"18\">";
+            }
+        }
+    </script>
+</head>
+<body>
+    用户名: <input type="text" id="username" value="千文"/>
+    <span style="color: red" id="userspan">
+<!--        <img src="right.png" width="20" height="18">-->
+    </span><br/>
+    <button onclick="onclickFunc()">验证</button>
+</body>
+</html>

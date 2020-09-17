@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function checkALl() {
+            //让所有复选框都选中
+
+            //document.getElementsByTagName();根据指定的标签名查询返回多个标签对象的集合
+            //这个集合的操作和数组一样
+            //集合中每个对象都是DOM对象
+            //这个集合中元素的顺序是他们在html中的从上到下的顺序
+            var inputs = document.getElementsByTagName("input");
+            // alert(inputs); [object NodeList]
+            // alert(inputs[0]); [object HTMLInputElement]
+            //checked表示复选框的状态.选中为true,未选中为false,且是可读可写的
+            for (var i = 0; i < inputs.length; i++) {
+                inputs[i].checked = true;
+            }
+        }
+    </script>
+</head>
+<body>
+    兴趣爱好:
+    <input type="checkbox"  value="cpp">C++
+    <input type="checkbox"  value="java">Java
+    <input type="checkbox"  value="js">JavaScript
+    <br/>
+    <button onclick="checkALl()">全选</button>
+</body>
+</html>

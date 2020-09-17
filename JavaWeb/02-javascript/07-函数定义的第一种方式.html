@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        //无参函数
+        function fun() {
+            alert("这是个无参函数");
+        }
+        fun(); //函数调用才会执行
+
+        function fun1(a,b) {
+            alert("这是有参函数 a = " + a + ",b = " + b);
+        }
+        fun1(12,123);
+
+        /*
+        在 JavaScript 语言中，如何定义带有返回值的函数？
+        只需要在函数体内直接使用 return 语句返回值即可！
+         */
+        function fun3(a,b) {
+            return a + b;
+        }
+        alert("a + b = " + fun3(12,13));
+    </script>
+</head>
+<body>
+
+</body>
+</html>

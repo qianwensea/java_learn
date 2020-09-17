@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.shi.dao.IUserDao">
+
+
+<!--    了解的内容,抽取重复的sql语句-->
+    <sql id="defaultUser">
+        select * from user
+    </sql>
+
+<!--    查询所有用户-->
+    <select id="findAll" resultType="com.shi.domain.User">
+        <include refid="defaulUser"></include>
+--         select * from user;
+    </select>
+
+<!--    根据id查询用户-->
+    <select id="findById" parameterType="java.lang.Integer" resultType="com.shi.domain.User">
+        select * from user where id = #{id};
+    </select>
+
+<!--    根据名称模糊查询用户-->
+    <select id="findByUsername" parameterType="java.lang.String" resultType="com.shi.domain.User">
+        select * from user where username like #{username};
+--         select * from user where username like '%${value}%';  两种都可以
+    </select>
+
+<!--    根据QueryVo的条件查询用户-->
+    <select id="findUserByVo" parameterType="com.shi.domain.QueryVo" resultType="com.shi.domain.User">
+        select * from user where username like #{user.username};
+    </select>
+
+<!--    根据条件查询-->
+    <select id="findUserByCondition" parameterType="com.shi.domain.User" resultType="com.shi.domain.User">
+        select * from user
+        <where>
+            <if test="username != null">
+                and username = #{username};
+            </if>
+            <if test="sex != null">
+                and sex = #{sex};
+            </if>
+        </where>
+
+    </select>
+
+<!--    -->
+    <select id="findUserInIds" parameterType="com.shi.domain.QueryVo" resultType="com.shi.domain.User">
+        select * from user
+        <where>
+            <if test="ids != null and ids.size()>0">
+                <foreach collection="ids" open="and id in(" close=")" item="id" separator=",">
+--                     此处的id与item中保持一致
+                    #{id}
+                </foreach>
+            </if>
+        </where>
+    </select>
+
+<!--&lt;!&ndash;    根据条件查询&ndash;&gt;-->
+<!--    <select id="findUserByCondition" parameterType="com.shi.domain.User" resultType="com.shi.domain.User">-->
+<!--        select * from user where 1=1-->
+<!--        <if test="username != null">-->
+<!--            and username = #{username};-->
+<!--        </if>-->
+<!--        <if test="sex != null">-->
+<!--            and sex = #{sex};-->
+<!--        </if>-->
+
+<!--    </select>-->
+</mapper>

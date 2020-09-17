@@ -1,0 +1,63 @@
+2020-09-11 17:18:08,415 0      [           main] DEBUG ache.ibatis.logging.LogFactory  - Logging initialized using 'class org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2020-09-11 17:18:08,811 396    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2020-09-11 17:18:08,811 396    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2020-09-11 17:18:08,811 396    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2020-09-11 17:18:08,812 397    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2020-09-11 17:18:08,908 493    [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+2020-09-11 17:18:09,696 1281   [           main] DEBUG source.pooled.PooledDataSource  - Created connection 603856241.
+2020-09-11 17:18:09,697 1282   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@23fe1d71]
+2020-09-11 17:18:09,703 1288   [           main] DEBUG   com.shi.dao.IUserDao.findAll  - ==>  Preparing: select * from user 
+2020-09-11 17:18:09,825 1410   [           main] DEBUG   com.shi.dao.IUserDao.findAll  - ==> Parameters: 
+2020-09-11 17:18:09,949 1534   [           main] DEBUG   com.shi.dao.IUserDao.findAll  - <==    Columns: id, username, birthday, sex, address
+2020-09-11 17:18:09,982 1567   [           main] DEBUG   com.shi.dao.IUserDao.findAll  - <==        Row: 41, 老王, 2018-02-27 17:47:08, 男, 北京
+2020-09-11 17:18:10,001 1586   [           main] DEBUG   com.shi.dao.IUserDao.findAll  - <==        Row: 42, 小二王, 2018-03-02 15:09:37, 女, 北京金燕龙
+2020-09-11 17:18:10,014 1599   [           main] DEBUG   com.shi.dao.IUserDao.findAll  - <==        Row: 43, 小二王, 2018-03-04 11:34:34, 女, 北京金燕龙
+2020-09-11 17:18:10,018 1603   [           main] DEBUG   com.shi.dao.IUserDao.findAll  - <==        Row: 45, 传智播客, 2018-03-04 12:04:06, 男, 北京金燕龙
+2020-09-11 17:18:10,029 1614   [           main] DEBUG   com.shi.dao.IUserDao.findAll  - <==        Row: 46, 老王, 2018-03-07 17:37:26, 男, 北京
+2020-09-11 17:18:10,037 1622   [           main] DEBUG   com.shi.dao.IUserDao.findAll  - <==        Row: 48, 小马宝莉, 2018-03-08 11:44:00, 女, 北京修正
+2020-09-11 17:18:10,048 1633   [           main] DEBUG   com.shi.dao.IUserDao.findAll  - <==      Total: 6
+2020-09-11 17:18:10,066 1651   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@23fe1d71]
+2020-09-11 17:18:10,070 1655   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@23fe1d71]
+2020-09-11 17:18:10,070 1655   [           main] DEBUG source.pooled.PooledDataSource  - Returned connection 603856241 to pool.
+2020-09-13 11:52:17,199 0      [           main] DEBUG ache.ibatis.logging.LogFactory  - Logging initialized using 'class org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2020-09-13 11:52:17,902 703    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2020-09-13 11:52:17,902 703    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2020-09-13 11:52:17,902 703    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2020-09-13 11:52:17,902 703    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2020-09-13 11:52:18,027 828    [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+2020-09-13 11:52:19,007 1808   [           main] DEBUG source.pooled.PooledDataSource  - Created connection 682376643.
+2020-09-13 11:52:19,007 1808   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@28ac3dc3]
+2020-09-13 11:52:19,007 1808   [           main] DEBUG   com.shi.dao.IUserDao.findAll  - ==>  Preparing: select * from user 
+2020-09-13 11:52:19,163 1964   [           main] DEBUG   com.shi.dao.IUserDao.findAll  - ==> Parameters: 
+2020-09-13 11:52:19,256 2057   [           main] DEBUG   com.shi.dao.IUserDao.findAll  - <==    Columns: id, username, birthday, sex, address
+2020-09-13 11:52:19,288 2089   [           main] DEBUG   com.shi.dao.IUserDao.findAll  - <==        Row: 41, 老王, 2018-02-27 17:47:08, 男, 北京
+2020-09-13 11:52:19,303 2104   [           main] DEBUG   com.shi.dao.IUserDao.findAll  - <==        Row: 42, 小二王, 2018-03-02 15:09:37, 女, 北京金燕龙
+2020-09-13 11:52:19,303 2104   [           main] DEBUG   com.shi.dao.IUserDao.findAll  - <==        Row: 43, 小二王, 2018-03-04 11:34:34, 女, 北京金燕龙
+2020-09-13 11:52:19,303 2104   [           main] DEBUG   com.shi.dao.IUserDao.findAll  - <==        Row: 45, 传智播客, 2018-03-04 12:04:06, 男, 北京金燕龙
+2020-09-13 11:52:19,303 2104   [           main] DEBUG   com.shi.dao.IUserDao.findAll  - <==        Row: 46, 老王, 2018-03-07 17:37:26, 男, 北京
+2020-09-13 11:52:19,303 2104   [           main] DEBUG   com.shi.dao.IUserDao.findAll  - <==        Row: 48, 小马宝莉, 2018-03-08 11:44:00, 女, 北京修正
+2020-09-13 11:52:19,319 2120   [           main] DEBUG   com.shi.dao.IUserDao.findAll  - <==      Total: 6
+2020-09-13 11:52:19,319 2120   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@28ac3dc3]
+2020-09-13 11:52:19,319 2120   [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@28ac3dc3]
+2020-09-13 11:52:19,319 2120   [           main] DEBUG source.pooled.PooledDataSource  - Returned connection 682376643 to pool.
+2020-09-13 14:07:26,990 0      [           main] DEBUG ache.ibatis.logging.LogFactory  - Logging initialized using 'class org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl' adapter.
+2020-09-13 14:07:27,302 312    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2020-09-13 14:07:27,302 312    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2020-09-13 14:07:27,302 312    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2020-09-13 14:07:27,302 312    [           main] DEBUG source.pooled.PooledDataSource  - PooledDataSource forcefully closed/removed all connections.
+2020-09-13 14:07:27,380 390    [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Opening JDBC Connection
+2020-09-13 14:07:27,786 796    [           main] DEBUG source.pooled.PooledDataSource  - Created connection 682376643.
+2020-09-13 14:07:27,786 796    [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@28ac3dc3]
+2020-09-13 14:07:27,786 796    [           main] DEBUG   com.shi.dao.IUserDao.findAll  - ==>  Preparing: select * from user 
+2020-09-13 14:07:27,864 874    [           main] DEBUG   com.shi.dao.IUserDao.findAll  - ==> Parameters: 
+2020-09-13 14:07:27,911 921    [           main] DEBUG   com.shi.dao.IUserDao.findAll  - <==    Columns: id, username, birthday, sex, address
+2020-09-13 14:07:27,927 937    [           main] DEBUG   com.shi.dao.IUserDao.findAll  - <==        Row: 41, 老王, 2018-02-27 17:47:08, 男, 北京
+2020-09-13 14:07:27,927 937    [           main] DEBUG   com.shi.dao.IUserDao.findAll  - <==        Row: 42, 小二王, 2018-03-02 15:09:37, 女, 北京金燕龙
+2020-09-13 14:07:27,942 952    [           main] DEBUG   com.shi.dao.IUserDao.findAll  - <==        Row: 43, 小二王, 2018-03-04 11:34:34, 女, 北京金燕龙
+2020-09-13 14:07:27,942 952    [           main] DEBUG   com.shi.dao.IUserDao.findAll  - <==        Row: 45, 传智播客, 2018-03-04 12:04:06, 男, 北京金燕龙
+2020-09-13 14:07:27,942 952    [           main] DEBUG   com.shi.dao.IUserDao.findAll  - <==        Row: 46, 老王, 2018-03-07 17:37:26, 男, 北京
+2020-09-13 14:07:27,942 952    [           main] DEBUG   com.shi.dao.IUserDao.findAll  - <==        Row: 48, 小马宝莉, 2018-03-08 11:44:00, 女, 北京修正
+2020-09-13 14:07:27,942 952    [           main] DEBUG   com.shi.dao.IUserDao.findAll  - <==      Total: 6
+2020-09-13 14:07:27,942 952    [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@28ac3dc3]
+2020-09-13 14:07:27,942 952    [           main] DEBUG ansaction.jdbc.JdbcTransaction  - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@28ac3dc3]
+2020-09-13 14:07:27,942 952    [           main] DEBUG source.pooled.PooledDataSource  - Returned connection 682376643 to pool.

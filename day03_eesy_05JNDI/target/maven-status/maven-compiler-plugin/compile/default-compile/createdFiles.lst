@@ -1,0 +1,3 @@
+com\shi\dao\IUserDao.class
+com\shi\domain\User.class
+com\shi\domain\QueryVo.class

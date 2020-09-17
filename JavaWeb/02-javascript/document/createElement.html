@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        window.onload = function () {
+
+            // 现在需要我们使用js代码创建html标签,并显示在页面上
+            //标签内容就是: <div>helloJavaScript</div>
+            var divElement = document.createElement("div"); //在内存中
+            // alert(divElement);
+            let textNode = document.createTextNode("helloJavaScript");//此时有一个文本节点对象
+            divElement.appendChild(textNode);
+            // divElement.innerHTML = "helloJavaScript";//<div>helloJavaScript</div>,此时还在内存中,不会显示出来
+            //添加子元素
+            document.body.appendChild(divElement);
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

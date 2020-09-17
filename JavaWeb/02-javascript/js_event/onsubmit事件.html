@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        //静态注册表单提交事件
+        function onsubmitFunc() {
+            //要验证所有表单项是否合法,如果有一个不合法就阻止表单提交
+            alert("静态注册表单提交事件----发现不合法");
+            return false;
+        }
+        //动态注册表单提交事件
+        window.onload = function () {
+            var submitobj = document.getElementById("submit01");
+            // alert(submitobj);
+            submitobj.onsubmit = function () {
+                alert("动态注册表单提交事件----发现不合法");
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <!--    return false可以阻止表单提交-->
+    <form action="http://localhost:8080" method="get" onsubmit="return onsubmitFunc()">
+        <input type="submit" value="静态注册"/>
+
+    </form>
+
+    <form action="http://localhost:8080" method="get" id="submit01">
+        <input type="submit" value="动态注册"/>
+
+    </form>
+</body>
+</html>

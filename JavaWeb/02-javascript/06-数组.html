@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        var arr = []; //定义一个空数组
+        var arr1 = [true,false,1,"abc"];
+        // alert(arr.length); //0
+        arr[0] = 12;
+        // alert(arr[0]);
+        // alert(arr.length); //1
+
+        //javascript中的数组,只要我们通过数组的下标值赋值,那么最大的下标值,就会自动的给数组扩容
+        arr[2] = "abc";
+        // alert(arr.length);//3
+    //    alert(arr[1]); //undefined
+        //数组的遍历操作
+        for (var i = 0;i < arr.length;i++){
+            alert(arr[i]);
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

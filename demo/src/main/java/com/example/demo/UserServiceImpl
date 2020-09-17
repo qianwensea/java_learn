@@ -1,0 +1,13 @@
+package com.example.demo;
+import org.springframework.stereotype.Service;
+
+@Service
+public class UserServiceImpl implements UserService {
+    public User getUserInfo(){
+        User user = new User();
+        user.setName("jack");
+        user.setPassword("12341234");
+        return user;
+    }
+}
+//.idea

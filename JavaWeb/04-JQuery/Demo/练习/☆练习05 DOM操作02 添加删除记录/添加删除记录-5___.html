@@ -1,0 +1,124 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Untitled Document</title>
+<link rel="stylesheet" type="text/css" href="styleB/css.css" />
+<script type="text/javascript" src="../../script/jquery-1.7.2.js"></script>
+<script type="text/javascript">
+	
+	$(function () {
+		//创建一个用于复用的删除函数
+		var deleteFun = function(obj){ //obj == 调用函数的this
+			//在事件相应的function函数中,有一个this对象,这个this对象就是当前响应事件的dom对象
+			var $trObj = $(this).parent().parent();
+			var name = $trObj.find("td:first").text();
+			/*
+			confirm()是javascript语言提供的一个确认提示框函数
+			当用户点击确定就返回true,反之返回false
+			 */
+			if (confirm("确认要删除" + name + "吗?")){
+				$trObj.remove();
+			}
+			return false;//可以阻止页面跳转
+		}
+
+		$("#addEmpButton").click(function () {
+			//获取姓名,邮箱,收入
+			var name = $("#empName").val();
+			var email = $("#email").val();
+			var salary = $("#salary").val();
+			var href = $("")
+
+			//创建一个行标签对象,添加显示到表格中
+			var $trObj = $("<tr>" +
+					"<td>" +　name + "</td>" +
+					"<td>" + email + "</td>" +
+					"<td>" + salary + "</td>" +
+					"<td><a href=\"deleteEmp?id=003\">Delete</a></td>" +
+					"</tr>");
+			//添加到表格中
+			$trObj.appendTo($("#employeeTable"))
+
+			//给新添加的行的a便签补绑
+			//写法一
+			// $trObj.find("a").click(function () {
+			// 	return deleteFun(this);
+			// })
+			//写法二
+			$trObj.find("a").click( deleteFun );
+		})
+
+		//删除操作
+		//给a标签绑上单击事件
+		$("a").click( deleteFun );
+	})
+	
+	
+</script>
+</head>
+<body>
+
+	<table id="employeeTable">
+		<tr>
+			<th>Name</th>
+			<th>Email</th>
+			<th>Salary</th>
+			<th>&nbsp;</th>
+		</tr>
+		<tr>
+			<td>Tom</td>
+			<td>tom@tom.com</td>
+			<td>5000</td>
+			<td><a href="deleteEmp?id=001">Delete</a></td>
+		</tr>
+		<tr>
+			<td>Jerry</td>
+			<td>jerry@sohu.com</td>
+			<td>8000</td>
+			<td><a href="deleteEmp?id=002">Delete</a></td>
+		</tr>
+		<tr>
+			<td>Bob</td>
+			<td>bob@tom.com</td>
+			<td>10000</td>
+			<td><a href="deleteEmp?id=003">Delete</a></td>
+		</tr>
+	</table>
+
+	<div id="formDiv">
+	
+		<h4>添加新员工</h4>
+
+		<table>
+			<tr>
+				<td class="word">name: </td>
+				<td class="inp">
+					<input type="text" name="empName" id="empName" />
+				</td>
+			</tr>
+			<tr>
+				<td class="word">email: </td>
+				<td class="inp">
+					<input type="text" name="email" id="email" />
+				</td>
+			</tr>
+			<tr>
+				<td class="word">salary: </td>
+				<td class="inp">
+					<input type="text" name="salary" id="salary" />
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+					<button id="addEmpButton" value="abc">
+						Submit
+					</button>
+				</td>
+			</tr>
+		</table>
+
+	</div>
+
+</body>
+</html>
