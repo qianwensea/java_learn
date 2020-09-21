@@ -34,9 +34,6 @@ import java.util.List;
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = SpringConfiguration.class)
 public class AccountServiceTest {
-
-    @Autowired
-    private ApplicationContext ac;
     @Autowired
     private IAccountService as;
 
