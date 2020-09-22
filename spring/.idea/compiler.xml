@@ -7,18 +7,25 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="day03_eesy_02proxy" />
+        <module name="day04_eesy_04tx" />
         <module name="day03_eesy_04adviceType" />
+        <module name="day04_eesy_02account_AOPText" />
         <module name="day01_eesy_04bean" />
         <module name="day02_eesy_03accountAnnoIOC" />
         <module name="day03_eesy_05annotationAOP" />
+        <module name="day04_eesy_03account_AOPText_anno" />
         <module name="day02_eesy_02accountXMLIOC" />
         <module name="day02_eesy_04account_annoioc_withoutXML" />
+        <module name="day04_eesy_06tx_anno" />
         <module name="day02_eesy_01anno_ioc" />
         <module name="day01_eesy_02factory" />
+        <module name="day04_eesy_05tx_xml" />
         <module name="day03_eesy_03springAOP" />
         <module name="day01_eesy_05DI" />
         <module name="day03_eesy_01account" />
         <module name="day01_eesy_01jdbc" />
+        <module name="day04_eesy_01jdbctemplate" />
+        <module name="day04_eesy_07tx_onlyAnnotatian" />
         <module name="day01_eesy_03spring" />
       </profile>
     </annotationProcessing>
