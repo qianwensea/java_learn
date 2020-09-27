@@ -12,6 +12,7 @@
         <module name="day02_01_response" />
         <module name="day02_02_fileupload" />
         <module name="day02_03_fileuploadserver" />
+        <module name="day03_ssm" />
       </profile>
     </annotationProcessing>
   </component>

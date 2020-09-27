@@ -14,6 +14,7 @@
         <module>day02_03_fileuploadserver</module>
         <module>day02_04_exception</module>
         <module>day02_05_interceptor</module>
+        <module>day03_ssm</module>
     </modules>
     <packaging>pom</packaging>
 
