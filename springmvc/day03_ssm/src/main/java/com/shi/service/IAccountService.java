@@ -20,6 +20,7 @@ public interface IAccountService {
 
     /**
      * 保存账户
+     * @param account
      */
     public void saveAccount(Account account);
 

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ <mapper namespace="com.shi.logindemo.dao.IUserDao">
+
+    <select id="findUserByUsername" resultType="com.shi.logindemo.pojo.User">
+        select * from "MTEST"."sjh_user" where username = #{username}
+    </select>
+    <!--        select * from sjh_user where username = #{username} AND password = #{password}-->
+    <select id="findUserByMassege" resultType="com.shi.logindemo.pojo.User">
+        select * from "MTEST"."sjh_user" where username = #{username} AND password = #{password}
+    </select>
+
+
+    <insert id="saveUser" parameterType="java.lang.String">
+        insert into "MTEST"."sjh_user"(username,password)values(#{username},#{password})
+    </insert>
+
+    <select id="findAll" resultType="com.shi.logindemo.pojo.User">
+--         select * from sjh_user
+        select * from "MTEST"."sjh_user"
+    </select>
+</mapper>

@@ -5,7 +5,7 @@
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
 
-  <!--  设置配置文件的路径-->
+  <!--  设置spring配置文件的路径-->
   <context-param>
     <param-name>contextConfigLocation</param-name>
     <param-value>classpath:applicationContext.xml</param-value>
