@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.shi</groupId>
-	<artifactId>springboot02_config</artifactId>
+	<artifactId>springboot-02-config-autoconfig</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>springboot02_config</name>
+	<name>springboot-02-config-autoconfig</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
@@ -29,25 +29,7 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-
-		<!--		导入配置文件处理器,配置文件进行绑定就会有提示-->
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-configuration-processor</artifactId>
-			<optional>true</optional>
-		</dependency>
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>4.12</version>
-			<scope>test</scope>
-		</dependency>
-        <dependency>
-            <groupId>jakarta.validation</groupId>
-            <artifactId>jakarta.validation-api</artifactId>
-        </dependency>
-    </dependencies>
-
+	</dependencies>
 
 	<build>
 		<plugins>
